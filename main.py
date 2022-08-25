@@ -45,8 +45,8 @@ def predict_single(name,models,predictors):
 
 
 def submit():
-    st.title('NBA Rookie Career Greater than five years prediction')
-    st.image("""rose.jpg""")
+    st.title('NBA Rookie Career Prediction')
+    st.image("""mural.jpg""")
     st.header('Search Player Name')
 
     rookie = st.selectbox(
@@ -56,7 +56,7 @@ def submit():
     
     st.dataframe(df[show_cols])
 
-    if st.button('Predict Career greater 5 years in the NBA'):
+    if st.button('Predict  Rookie Career'):
         #price = predict(carat, cut, color, clarity, depth, table, x, y, z)
         if final_predictions > 0.5:
             st.success(f'{rookie} is gonna last more than 5 years in the NBA')  
